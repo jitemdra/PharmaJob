@@ -1,0 +1,56 @@
+.touch{
+    font-size: 72px;
+    line-height: 75px;
+    color: #254035;
+    font-family: __EB_Garamond_95782f, __EB_Garamond_Fallback_95782f;;
+}
+
+.location{
+    padding: 20px;
+    background-color: gray;
+    color: #31795a;
+    size: 90px;
+}
+
+h2{
+    font-weight: 500px;
+    font-size: 34px;
+    line-height: 29px;
+    color: black;
+    font-family: __gordita_e76efa, __gordita_Fallback_e76efa;
+}
+
+.Hill{
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #878787;
+    font-family: __gordita_e76efa, __gordita_Fallback_e76efa;
+}
+
+.number{
+    font-weight: 400px;
+    font-size: 32px;
+    line-height: 30px;
+    color: #31795a;
+    font-family: __gordita_e76efa, __gordita_Fallback_e76efa;   
+    text-decoration: none;
+}
+
+.number:hover{
+    color: #10c878;
+}
+
+.field{
+    font-weight: 400px;
+    font-size: 15px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: __gordita_e76efa, __gordita_Fallback_e76efa;
+}
+
+.name{
+    border: none;
+    background-color: rgb(211, 203, 203);
+    filter: drop-shadow(5px 5px 10px black);
+}
