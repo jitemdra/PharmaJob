@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharma Job</title>
+  <link rel="shortcut icon" href="imgae/trapsant.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Condensed&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="imgae/trapsant.png" width="120px" alt="" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu bg-white" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Mrvacancy.html">Mr Vacancy</a></li>
+              <li><a class="dropdown-item" href="Managers.html">Managers Vacancy</a></li>
+              <li><a class="dropdown-item" href="PharmaProduction.html">Pharma Production Vacancy</a></li>
+              <li><a class="dropdown-item" href="PMT.html">PMT Vacancies</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Job.html" target="_blank">Job</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Explore</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html" target="_blank">Contact</a>
+          </li>
+
+          <button type="button" class="btn main-btn btn-primary position-relative Dashboard">
+            Dashboard
+            <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">
+              New
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+
+        </ul>
+
+        <a href="sumbitjob.html" class="text-decoration-none">
+          <p class="pt-3 pe-2 job">Post Job</p>
+        </a>
+        <a href="Job.html"><button class="btn main-btn px-4 rounded-pill">Back to Hiring</button></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Form -->
+
+  <div class="container mt-5">
+    <div class="text-center">
+      <img src="imgae/Vector.jpg" alt="Company Logo" class="img-fluid mb-4 shadow" width="200">
+    </div>
+
+    <h2 class="mb-4">Job Application Form</h2>
+
+    <form action="https://public.herotofu.com/v1/8c1d6230-a939-11ee-ae0b-a7e011fe96d3" method="post"
+      accept-charset="UTF-8">
+      <div class="row">
+        <!-- Basic Job Details -->
+        <div class=" shadow form-group m-2 col-md-5">
+          <p class="mb-3 fw-bolder text-primary">Job Basic Details</p>
+          <label for="jobTitle">Job Title</label>
+          <input type="text" class="form-control" id="jobTitle" name="jobTitle" placeholder="Enter Job Title" required>
+
+          <div class="form-group m-2">
+            <label for="jobLocation">Job Location</label>
+            <input type="text" class="form-control" id="jobLocation" name="jobLocation" placeholder="Enter Job Location" required>
+          </div>
+
+          <div class="form-group m-2">
+            <label for="numOpenings">Number of Openings</label>
+            <input type="number" class="form-control" id="numOpenings" name="numOpenings" placeholder="Enter Number of Openings" required>
+          </div>
+
+          <div class="form-group m-2">
+            <label for="jobCategory">Job Category</label>
+            <input type="text" class="form-control" id="jobCategory" name="jobCategory" placeholder="Enter Job Category" required>
+          </div>
+        </div>
+
+        <!--  Candidate Requriment -->
+        <div class=" shadow form-group col-md-5">
+          <p class="mb-3 mt-4 fw-bolder text-primary">Candidate Requriment</p>
+          <label for="MinimumExperience">Minimum Experience</label>
+          <input type="text" class="form-control" id="Minimum Experience" name="MinimumExperience" placeholder="Enter Job Timing" required>
+
+          <div class="form-group m-2">
+            <label for="MaximumExperience">Maximum Experience</label>
+            <input type="text" class="form-control" id="MaximumExperience" name="MaximumExperience" placeholder="Enter Interview Timing" required>
+          </div>
+
+          <div class="form-group m-2">
+            <label for="Monthlysalary">Monthly In-Hand Salary</label>
+            <input type="text" class="form-control" id="Monthlysalary" name="Monthlysalary" placeholder="Enter Company Name" required>
+          </div>
+
+          <div class="form-group m-2">
+            <label for="Skill">Skill</label>
+            <input type="text" class="form-control" id="Skill" name="Skill" placeholder="Enter Contact Person Number" required>
+          </div>
+
+          <div class="form-group m-2">
+            <label for="jobDescription">Job Info / Job Description</label>
+            <textarea class="form-control" id="jobDescription" name="jobDescription" rows="4" placeholder="Enter Job Info / Job Description"
+              required></textarea>
+          </div>
+
+        </div>
+
+        <!--  Timeing -->
+        <div class=" shadow form-group mt-4 col-md-5">
+          <p class="mb-3 mt-4 fw-bolder text-primary">Job Timing</p>
+          <label for="jobtiming">Job Timing:</label>
+          <input type="text" class="form-control" id="jobtiming" name="jobtiming" placeholder="Enter Job Timing" required>
+
+          <div class="form-group m-2">
+            <label for="InterviewTiming">Interview Timing:</label>
+            <input type="text" class="form-control" id="InterviewTiming" name="InterviewTiming" placeholder="Enter Interview Timing" required>
+          </div>
+        </div>
+
+
+        <!-- About Your Company -->
+
+        <div class=" shadow form-group m-4 col-md-5">
+          <p class="mb-3 mt-4 fw-bolder text-primary">About Your Company</p>
+          <label for="CompanyName">Company Name:</label>
+          <input type="text" class="form-control" id="CompanyName" name="CompanyName" placeholder="Enter Job Timing" required>
+
+          <div class="form-group m-2">
+            <label for="ContactPersonName">Contact Person Name:</label>
+            <input type="text" class="form-control" id="ContactPersonName" name="ContactPersonName" placeholder="Enter Interview Timing" required>
+          </div>
+
+          <div class="form-group m-2">
+            <label for="PhoneNumber">Phone Number:</label>
+            <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" placeholder="Enter Interview Timing" required>
+          </div>
+
+          <div class="form-group m-2">
+            <label for="EmialID">Emial ID:</label>
+            <input type="text" class="form-control" id="EmialID" name="EmialID" placeholder="Enter Interview Timing" required>
+          </div>
+
+          <div class="form-group m-2">
+            <label for="ContactPersonDesignaton">Contact Person Designaton:</label>
+            <input type="text" class="form-control" id="ContactPersonDesignaton" name="ContactPersonDesignaton" placeholder="Enter Interview Timing" required>
+          </div>
+
+          <div class="form-group m-2">
+            <label for="JobAddress">Job Address</label>
+            <textarea class="form-control" id="JobAddress" name="JobAddress" rows="4" placeholder="Enter Job Info / Job Description"
+              required></textarea>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <input type="submit" class="btn main-btn px-4 rounded-pill mt-2" value="Post Now" />
+        <div style="text-indent:-99999px; white-space:nowrap; overflow:hidden; position:absolute;" aria-hidden="true">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"/>
+        </div>
+    </form>
+  </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>

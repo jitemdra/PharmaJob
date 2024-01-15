@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharma Job</title>
+  <link rel="shortcut icon" href="imgae/trapsant.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Condensed&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="imgae/trapsant.png" width="120px" alt="" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu bg-white" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Mrvacancy.html">Mr Vacancy</a></li>
+              <li><a class="dropdown-item" href="Managers.html">Managers Vacancy</a></li>
+              <li><a class="dropdown-item" href="PharmaProduction.html">Pharma Production Vacancy</a></li>
+              <li><a class="dropdown-item" href="PMT.html">PMT Vacancies</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"> Home </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Job.html">Job</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Explore</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html" target="_blank">Contact</a>
+          </li>
+
+          <button type="button" class="btn main-btn btn-primary position-relative Dashboard">
+            Dashboard
+            <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">
+              New
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+
+        </ul>
+        <form class="d-flex">
+          <a href="sumbitjob.html" class="text-decoration-none">
+            <p class="pt-3 pe-2 job">Post Job</p>
+          </a>
+          <button class="btn main-btn px-4 rounded-pill">Back to Hiring</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- filter -->
+
+  <div class="container mt-5">
+    <h2>Job Filters</h2>
+
+    <div class="row">
+      <div class="col-md-3">
+        <label for="category">Category:</label>
+        <input type="text" id="category" class="form-control" placeholder="Type to filter" oninput="applyFilters()">
+      </div>
+
+      <div class="col-md-3">
+        <label for="location">Location:</label>
+        <input type="text" id="location" class="form-control" placeholder="Type to filter" oninput="applyFilters()">
+      </div>
+
+      <div class="col-md-3">
+        <label for="company">Company:</label>
+        <input type="text" id="company" class="form-control" placeholder="Type to filter" oninput="applyFilters()">
+      </div>
+
+      <div class="col-md-3">
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" class="form-control" placeholder="Type to filter" oninput="applyFilters()">
+      </div>
+    </div>
+
+    <div class="row mt-3" id="job-list">
+      <!-- Job cards will be displayed here -->
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Sample job data
+    const jobs = [
+      { title: "ABM (Area Business Managers)", category: 'Manager vacancy', location: 'NA', company: 'NA', salary: 'Negotiable', description: '<details><summary>More Details</summary> <h2> Candidate Requriment: </h2> Skill: Science/Pharma Graduate, Senior MRs can also apply <br> <h2> About Company: </h2>Email Id: <a href = "mailto: santoshzbm@gmail.com">santoshzbm@gmail.com</a></details>' },
+
+      // 2
+      { title: 'Medical Representative', category: 'M.R Vacancy (Medical Representative)', location: 'NA', company: 'Zydus Lifscience Ltd', salary: 'NA', description: 'Contact: <a href="tel:9316022331" class="number"> 9316022331 </a>. <details><summary>More Details</summary> <h2> Candidate Requriment: </h2> Minimum Experience: 6Month Year, Maximum (No Fresher Please), <br> Skill: Graduate/B Pharma <br> Age: Not more than 28 years. <br>  <h2> About Company: </h2> company name: Zydus Lifescience Ltd, contact person Name: Karnal nd Kangra, Phone Number: <a href="tel:9316022331" class="number"> 931602231 </a>, Email Id: <a href = "mailto: rm24031991@gmail.com">mudraswasthyasevapvtltd</a>"> </details>' },
+
+      // 3
+      { title: "ABM'S", category: 'Managers Vacancy', location: 'South Mumbai', company: 'Wayonext Pharmaceuticals', salary: 'NA', description: 'Contact: <a href="tel: 9321008494" class="number"> 9321008494 </a>. <details><summary>More Details</summary> <h2> Candidate Requriment: </h2> Skill: Any Graduate <br> Bike Compulsory <br> Age : Negotiable <br> Senior MRs can also apply, <br> <h2> About Company: </h2> company name: Wayonext Pharmaceuticals, Phone Number: <a href="tel:8127558585" class="number"> 8127558585 </a>, Email Id: <a href = "mailto: wayonextpharma@gmail.com"> wayonextpharma@gmail.com </a>, Job Address: South Mumbau"></details>' },
+
+      // 4
+      { title: 'Sales Executive', category: 'Managers Vacancy', location: 'Ludhiana', company: 'Sun Pharma', salary: '₹3.6 Lakh per annum', description: 'Contact: <a href="tel:6283779932" class="number"> 6283779932 </a>. <details><summary>More Details</summary> <h2> Candidate Requriment: </h2> Minimum Experience: Should have 6 month <br> Maximum Experience: 1 Year (Experience in the same segment), <br> Skill: Science Graduate (Only 6 months to 1 year experienced candidate) <br> <h2> About Company: </h2> company name: Sun Pharma, contact person Name: Harsimarpreet singh, Phone Number: <a href="tel:6283779932" class="number"> 6283779932 </a>, contact person Designation: ABM (Area Business Manager)"> </details>'},
+
+
+      // 5
+      { title: 'Marketing Executive at Agra', category: 'Manager Vacancy', location: 'NA', company: 'Lupin Ltd', salary: 'NA', description: 'Contact: <a href="tel: 9794418556" class="number"> 9794418556 </a>. <details><summary>More Details</summary> <h2> Candidate Requriment: </h2> Minimum Experience: 1 year (Perferably) <br> Skill: B Pharma/B.Sc <br> Excellent Communication skills/Scientific communication <br> <h2> About Company: </h2> company name: Lupin Ltd <br> contact person Name: Arpit Gupta <br> Phone Number: <a href="tel:9794418556" class="number"> 9794418556 </a> </details>' },
+
+      // 6
+      { title: 'Medical Representative', category: 'MR Vacancy (Medical Representative)', location: 'NA', company: 'NA', salary: 'Negotiable', description: 'Contact: <a href="tel: 8395878352" class="number"> 8395878352 </a>. <details><summary>More Details</summary> <h2> Candidate Requriment: </h2> Minimum Experience: 1 year Experience <br> Skill: NA <br> Age: Below 30 Years </details>' },
+
+      // 7
+      { title: 'TM', category: 'Manager Vacancy', location: 'NA', company: 'Emcure Pharmaceutical (Xennex Div) (Ferium XT TAB)', salary: 'NA', description: 'Contact: <a href="tel: 9794594759" class="number"> 9794594759 </a>. <details><summary>More Details</summary> <h2> Candidate Requriment: </h2> Minimum Experience: 1 Month <br> Skill: Science Graduate <br> Age: Max 27 Years <br> <h2> About Company: </h2> company name: Emcure Pharmaceutical (Xennex Div) (Ferium XT TAB) <br> Phone Number: <a href="tel: 9794594759" class="number"> 9794594759 </a> </details>' },
+
+      // 8
+      { title: 'Bharat Serums and Vaccine', category: 'Manager Vacancy', location: 'Agra and Aligarh', company: 'Bharat Serums and Vaccine Emacare division', salary: 'NA', description: 'Contact: <a href="tel: 9416055561" class="number"> 9416055561 </a>. <details><summary>More Details</summary> <h2> About Company: </h2> company name: Bharat Serums and Vaccine Emacare division <br> Contact person name: Anil Kumar <br> Phone Number: <a href="tel: 941605561" class="number"> 941605561 </a> </details>'},
+
+      // 9
+      { title: 'Medical Representative', category: 'MR Vacancy (Medical Representative)', location: 'Agra', company: 'Ozone pharmaceuticals Ltd', salary: 'NA', description: 'Contact: <a href="tel: 995824724" class="number"> 995824724 </a>. <details><summary>More Details</summary> <h2> About Company: </h2> company name: Ozone pharmaceuticals Ltd <br> Contact person name: Deepak Chandeliya <br> Phone Number: <a href="tel: 995824724" class="number"> 995824724 </a> </details>'},
+
+      // 10
+      { title: "Gastro (ARRON Div)", category: 'Manager Vacancy', location: 'Meerut', company: 'Intas Pharmaceuticals Ltd', salary: 'NA', description: 'Contact: <a href="tel: 8960566579" class="number"> 8960566579 </a>. <details><summary>More Details</summary> <h2> Candidate Requriment: </h2> Skill: B.Sc, B.Pharma (Scienc Background) <br> Age: Not more 25 years <br> <h2> Minimum Experience: </h2> Fresher also can apply, <br> <h2> Maximum Experince: </h2> more than 6 months <br> About Company: </h2> company name: Intas Pharmaceuticals Ltd, <br> Phone Number: <a href="tel: 8960566579" class="number"> 8960566579 </a>, <br> Email Id: <a href = "mailto: tlpsrivastava@gmail.com"> tlpsrivastava@gmail.com </a>"></details>'},
+
+      // 11
+      { title: "Intas Pharmaceuticals Ltd", category: 'Intas Pharmaceuticals Ltd', location: 'Lucknow & Kanpur', company: 'Intas Pharmaceuticals Ltd', salary: 'NA', description: 'Contact: <a href="tel: 8960566579" class="number"> 8960566579 </a>. <details><summary>More Details</summary> <h2> Candidate Requriment: </h2> Skill: B.Sc, B.Pharma()  <br> Age: Not more 25 years <br> <h2> Minimum Experience: </h2> Fresher also can apply, <br> <h2> Maximum Experince: </h2> more than 6 months <br> About Company: </h2> company name: Intas Pharmaceuticals Ltd, <br> Phone Number: <a href="tel: 8960566579" class="number"> 8960566579 </a>, <br> Email Id: <a href = "mailto: tlpsrivastava@gmail.com"> tlpsrivastava@gmail.com </a>"></details>'},
+
+      // 12
+      { title: "Intas Pharmaceuticals Ltd", category: 'Manager Vacancy', location: 'Lucknow & Kanpur', company: 'Intas Pharmaceuticals Ltd', salary: 'NA', description: 'Contact: <a href="tel: 8840442516" class="number"> 8840442516 </a>. <details><summary>More Details</summary> <h2> Candidate Requriment: </h2> Skill: B.Sc, B.Pharma(Science background) <br> Age: Not more 26 years <br> <h2> Minimum Experience: Fresher background may also apply Maximum Eperience: More than 6 months </h2> Fresher also can apply, <br> <h2> Minimum Experience: </h2> Fresher also can apply, <br> <h2> Maximum Experince: </h2> more than 6 months <br> About Company: </h2> company name: Intas Pharmaceuticals Ltd, <br> Phone Number: <a href="tel: 8840442516" class="number"> 8840442516 </a>, <br> Email Id: <a href = "mailto: nimish_srivastava@gmail.com"> nimish_srivastava@gmail.com </a>"></details>'},
+      // Add more jobs with categories, locations, companies, salaries, and descriptions as needed
+    ];
+
+    // Function to apply filters and display filtered jobs
+    function applyFilters() {
+      const inputCategory = document.getElementById('category').value.toLowerCase();
+      const inputLocation = document.getElementById('location').value.toLowerCase();
+      const inputCompany = document.getElementById('company').value.toLowerCase();
+      const inputSalary = document.getElementById('salary').value.toLowerCase();
+
+      const filteredJobs = jobs.filter(job => {
+        return job.category.toLowerCase().includes(inputCategory) &&
+          job.location.toLowerCase().includes(inputLocation) &&
+          job.company.toLowerCase().includes(inputCompany) &&
+          job.salary.toLowerCase().includes(inputSalary);
+      });
+
+      displayJobs(filteredJobs);
+    }
+
+    // Function to display jobs on the page
+    function displayJobs(jobs) {
+      const jobListDiv = document.getElementById('job-list');
+      jobListDiv.innerHTML = '';
+
+      jobs.forEach(job => {
+        const card = document.createElement('div');
+        card.className = 'col-md-6 mb-3';
+        card.innerHTML = `
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">${job.title}</h5>
+                        <p class="card-text">Category: ${job.category}</p>
+                        <p class="card-text">Location: ${job.location}</p>
+                        <p class="card-text">Company: ${job.company}</p>
+                        <p class="card-text">Salary: ${job.salary}</p>
+                        <p class="card-text">${job.description}</p>
+                    </div>
+                </div>
+            `;
+        jobListDiv.appendChild(card);
+      });
+    }
+
+    // Initial display of all jobs
+    displayJobs(jobs);
+  </script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>
