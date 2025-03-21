@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OSMcare | CRM</title>
+    <link rel="icon" type="image/x-icon" href="assets/dist/img/fav2.ico">
+    <link href="assets/dist/fonts/inter/inter.css" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f03a5829e7.js" crossorigin="anonymous"></script>
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <!-- iCheck -->
+    <link rel="stylesheet" href="assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="assets/plugins/jqvmap/jqvmap.min.css">
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="assets/dist/css/style.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/dist/css/toast.css">
+    <link rel="stylesheet" type="text/css" href="assets/dist/css/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/dist/css/dataTables.css">
+    <link rel="stylesheet" type="text/css" href="assets/dist/css/fixedColumns.dataTables.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+        <!-- Preloader -->
+        <aside class="main-sidebar sidebar-dark-primary   ">
+            <!-- Brand Logo -->
+            <a href="i#" class="brand-link">
+                <img src="assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image "
+                    style="opacity: .8">
+            </a>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <!-- SidebarSearch Form -->
+                <!-- Sidebar Menu -->
+                <nav class="mt-0 text-left">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item  ">
+                            <a href="so-open.html" class="nav-link ">
+                                <span><i class="fa fa-house"></i></span>
+
+
+                                <span class="right badge mt-1234 left-menu-fnt text-left"> Home </span>
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="client.html" class="nav-link">
+                                <span> <i class="fa-solid fa-address-card"></i> </span>
+
+                                <span class="right badge mt-1234 left-menu-fnt text-left">
+                                    Register Complaint
+
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <span class="right badge mt-1234 left-menu-fnt text-left"> Repair & Service </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-user-check"></i>
+                                <span class="right badge mt-1234 left-menu-fnt text-left"> User Master </span>
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-car-rear"></i>
+                                <span class="right badge mt-1234 left-menu-fnt text-left"> Vehicle Master</span>
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-list-check"></i>
+                                <span class="right badge mt-1234 left-menu-fnt text-left"> Spare Management</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-list-check"></i>
+                                <span class="right badge mt-1234 left-menu-fnt text-left"> User Details</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                <span class="right badge mt-1234 left-menu-fnt text-left">
+                                    Logout
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+                <div class="box234 p-3 bl-clr5432"><img src="assets/dist/img/osm_logo.png" alt="OSM Logo"
+                        class="brand-image"></div>
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light fixed-top">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav pl-3">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+
+                <li class="nav-item  d-sm-inline-block">
+                    <a href="#" class="nav-link pl-0"> User Master</a>
+                </li>
+
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Navbar Search -->
+                <li class="nav-item  mt-1tpnv mr-51a dis-none">
+
+                    <!-- <div class="input-group">
+    <input type="text" class="form-control frm-hight40" placeholder="Search Details">
+    <div class="input-group-append">
+      <button class="btn btn-secondary" type="button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div> -->
+
+                </li>
+
+                <li class="nav-item ">
+
+                    <a href="javascript:void(0)"
+                        class="btn   btn-outline-secondary btn-sm pl-3 pr-3 border-all mt-1 clickOnNew"> <i
+                            class="fa fa-plus" aria-hidden="true"></i> New </a>
+
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <img src="assets/dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50  img-circle">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-lg1  dropdown-menu">
+                        <span class="dropdown-item dropdown-header text-center fnt112" id="profileUserName"> Admin
+                        </span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <div class="media">
+                                <mat-icon role="img" class="mat-icon notranslate mat-icon-no-color mr-4"
+                                    aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="user-circle"
+                                    data-mat-icon-namespace="heroicons_outline"><svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" fit="" height="100%"
+                                        width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+                                        </path>
+                                    </svg></mat-icon>
+                                <div class="media-body">
+
+
+                                    <p class="text-sm "> Profile</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+
+                        <span class="dropdown-item dropdown-header text-center fnt112"> Settings </span>
+
+
+                        <div class="dropdown-divider"></div>
+                        <a href="changePassword.html" class="dropdown-item">
+                            <div class="media">
+                                <mat-icon role="img" class="mat-icon notranslate icon-size-5 mat-icon-no-color mr-4"
+                                    aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="refresh"
+                                    data-mat-icon-namespace="heroicons_solid"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor" fit="" height="100%" width="100%"
+                                        preserveAspectRatio="xMidYMid meet" focusable="false">
+                                        <path fill-rule="evenodd"
+                                            d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                                            clip-rule="evenodd"></path>
+                                    </svg></mat-icon>
+                                <div class="media-body">
+                                    <p class="text-sm ">Change Password</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <div class="media">
+                                <mat-icon role="img" class="mat-icon notranslate mat-icon-no-color mr-4"
+                                    aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="logout"
+                                    data-mat-icon-namespace="heroicons_outline"><svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" fit="" height="100%"
+                                        width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                                        </path>
+                                    </svg></mat-icon>
+                                <div class="media-body">
+                                    <p class="text-sm " onClick="logout()"> Logout</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+
+
+
+            </ul>
+        </nav>
+        <div id="common"></div>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper bdr-tp-aa1">
+            <!-- Content Header (Page header) -->
+
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <section class="content  mt-1">
+                <div class="container-fluid ">
+
+                    <!-- Small boxes (Stat box) -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="psa1">
+                                <div class="plr1">
+                                    <ul class="nav nav-tabs forRoleFour" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab"
+                                                onClick="getComplaintList('RAISEBYCUSTOMER')" href="#tabs-1"
+                                                role="tab">Open Request</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab"
+                                                onClick="getComplaintList('RAISEBYCUSTCARE')" href="#tabs-2"
+                                                role="tab">Assigned Request</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12  mt-41234">
+                        <!-- general form elements -->
+                        <div class="card card-primary">
+
+                            <!-- /.card-header -->
+                            <!-- form start -->
+                            <form>
+                                <div class="card-body pt-0 pl-0">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="in-table-st11ab">
+
+                                                <div class="tab-content forRoleFourBody">
+                                                    <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                                        <div class="table-responsive-sm mt-3" id="RAISEBYCUSTOMER-id">
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                                        <div class="table-responsive-sm mt-3" id="RAISEBYCUSTCARE-id">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive-sm mt-3 forRoleOneTHree"
+                                                    id="ComplaintsTable">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+    </div>
+
+    </div>
+    <!-- /.modal-content -->
+     
+    </div>
+    <!-- /.modal-dialog -->
+    </div>
+    <div id="footer" class="main-footer text-center mt-2">
+        <span class="small"> Powered by GoEVC</span> <img src="assets/dist/img/GO-EVC.png" alt="AdminLTE Logo"
+            class="brand-image">
+
+    </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugins/select2/js/select2.full.min.js"></script>
+    <script src="assets/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="assets/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <script src="assets/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <script src="assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="assets/dist/js/adminlte.js"></script>
+    <script src="assets/dist/js/demo.js"></script>
+    <script src="assets/dist/js/common.js"></script>
+    <script src="assets/dist/js/pages/dashboard.js"></script>
+    <script type="text/javascript" charset="utf8" src="assets/dist/js/select2.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="assets/dist/js/toast.js"></script>
+    <script type="text/javascript" charset="utf8" src="assets/dist/js/dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="assets/dist/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="assets/dist/js/dataTables.fixedColumns.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="assets/dist/js/jszip.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="assets/dist/js/buttons.html5.min.js"></script>
+
+</body>
+
+</html>
